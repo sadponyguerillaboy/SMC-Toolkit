@@ -41,9 +41,9 @@ build.py <path>
 `build.py` builds / assembles the file chunks created by `reconstruct.py` in the specified path. Example, if you specificy the `<path>` of `extraxcted/Mac-63001698E7A34814_smc`, it will only assemble those files into a binary.
 
 ```
-custom_payload.py <path> <version>
+custompayload.py <path> <version>
 ```
-`custom_payload.py` builds a payload out of file chunks created by `reconstruct.py` in the specified path. This allows for targeted payloads after custom patching of chunks etc. Make sure you include a vectors table file in the folde you intend to build (`00_00000000.bin`).
+`custompayload.py` builds a payload out of file chunks created by `reconstruct.py` in the specified path. This allows for targeted payloads after custom patching of chunks etc. Make sure you include a vectors table file in the folde you intend to build (`00_00000000.bin`).
 
 
 __TODO:__
