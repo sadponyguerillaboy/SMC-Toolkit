@@ -1,7 +1,6 @@
 import os
 import sys
 from itertools import islice
-from typing import final
 
 THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
 
