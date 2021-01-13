@@ -86,7 +86,7 @@ def main(path, version):
 			header_array.append(create_header_payload(checksum, 'H'))
 			security_array.extend(checksum)
 
-	security_payload = 	rs232_checksum(security_array)
+	security_payload = rs232_checksum(security_array)
 	header_array.append(create_header_payload(security_payload, 'S'))
 	payload_joined = create_joined(payload_array)
 	header_joined = create_joined(header_array)
