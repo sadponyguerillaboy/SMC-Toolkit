@@ -84,7 +84,7 @@ def main(path, version):
 			header_data_bytes = bytearray.fromhex(''.join(header_data))
 			checksum = rs232_checksum(header_data_bytes)
 			header_array.append(create_header_payload(checksum, 'H'))
-			security_array.extend(checksum)
+			security_array.append(int(checksum, 16))
 
 	security_payload = rs232_checksum(security_array)
 	header_array.append(create_header_payload(security_payload, 'S'))
@@ -95,6 +95,9 @@ def main(path, version):
 	
 	with open('custom_payload.smc', 'w') as w:
 		w.write(final_payload)
+	
+	with open('custom_payload.smc', 'ab') as w:
+		w.write(b'\x0A')
 
 path = sys.argv[1]
 version = sys.argv[2]
