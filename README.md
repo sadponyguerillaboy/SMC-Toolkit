@@ -34,6 +34,20 @@ createpayload.py firmware.bin 2.36f7
 `createpayload.py` generates 3 of the 4 older style payload components from a complete firmware file. It will create `flasher_base.smc, flasher_update.smc and Mac-BoardID.smc` and store them in a folder entitled `payload`. Currently epm files are on the TODO list. For now just use the original epm file. `createpayload.py` is only currently able to generate the older style payloads that use the 20 byte checksum header and security bytes. Deciphering the 256 RSA signature on newer payloads is also on the TODO list.
 
 
+__Macapatcher.py Usage:__
+```
+macapatcher.py -p <path to chunks>
+macapatcher.py -f <path to file>
+```
+
+__Macapatcher.py Example:__
+```
+macapatcher.py -p extracted/2012MBP13_smc
+macapatcher.py -f extracted/firmware/firmware.bin
+```
+`macapatcher.py` searches either a folder containing the chunks created by `reconstruct.py` or a single binary for the MACA patch location and then patches the chunk or file. Recommended usage is to patch a chunk using the `p` flag, then rebuild your payload with `custompayload.py`. All credit for the patch goes to @microwave89-hv.
+
+
 __Extra Tools:__
 ```
 build.py <path>
