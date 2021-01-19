@@ -45,7 +45,7 @@ __Macapatcher.py Example:__
 macapatcher.py -p extracted/2012MBP13_smc
 macapatcher.py -f extracted/firmware/firmware.bin
 ```
-`macapatcher.py` searches either a folder containing the chunks created by `reconstruct.py` or a single binary for the MACA patch location and then patches the chunk or file. Recommended usage is to patch a chunk using the `p` flag, then rebuild your payload with `custompayload.py`. All credit for the patch goes to @microwave89-hv.
+`macapatcher.py` searches either a folder containing the chunks created by `reconstruct.py` or a single binary for the MACA patch location and then patches the chunk or file. Recommended usage is to patch a chunk using the `p` flag, then rebuild your payload with `custompayload.py`. All credit for the patch goes to [@microwave89-hv](https://github.com/microwave89-hv).
 
 
 __Extra Tools:__
