@@ -64,7 +64,7 @@ build.py <path>
 ```
 custompayload.py <path> <version>
 ```
-`custompayload.py` builds a payload out of file chunks created by `reconstruct.py` in the specified path. This allows for targeted payloads after custom patching of chunks etc. Make sure you include a vectors table file created by `reconstruct.py` in the folder you intend to build (`00_00000000.bin`).
+`custompayload.py` builds a payload out of file chunks created by `reconstruct.py` in the specified path. This allows for targeted payloads after custom patching of chunks etc. Make sure you include a vectors table file (`00_00000000.bin`) created by `reconstruct.py` in the folder you intend to build.
 
 
 __TODO:__
