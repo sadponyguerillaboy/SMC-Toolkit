@@ -52,7 +52,7 @@ __dumpMACR.py Example:__
 ```
 dumpMACR.py
 ```
-`dumpMACR.py` will dump a patched SMC's complete firmware using `smc-fuzzer`. You must download [smc-fuzzer](https://github.com/theopolis/smc-fuzzer) and compile the binary. Make sure the binary is named `smc` and placed into the same location as `dumpMACR.py`. 
+`dumpMACR.py` will dump a patched SMC's complete firmware using `smc-fuzzer`. You must download [smc-fuzzer](https://github.com/theopolis/smc-fuzzer) and compile the binary. Make sure the binary is named `smc` and placed into the same location as `dumpMACR.py`. Note that the resulting SMC binary will be your patched version, not an original. You will need to revert the patched area back to it's original state to obtain a complete original rom. Patch info in `macapatcher.py`
 
 
 __Extra Tools:__
