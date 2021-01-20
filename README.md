@@ -44,7 +44,7 @@ __Macapatcher.py Example:__
 macapatcher.py -p extracted/2012MBP13_smc
 macapatcher.py -f extracted/firmware/firmware.bin
 ```
-`macapatcher.py` searches either a folder containing the chunks created by `reconstruct.py` or for a single binary for the MACA patch location and then patches the chunk or file. Recommended usage is to patch a chunk using the `p` flag, then rebuild your payload with `custompayload.py`. All credit for the patch goes to [@microwave89-hv](https://github.com/microwave89-hv). SMCUtil is required to flash the patched payload (not provided here and don't ask). This patch has been tested on 2012 - 2017 systems using the LM4F smc chips. Note: Be aware that attempting to flash your patched payload may result in irrevocable damage to your system and is not recommened for inexperienced users.
+`macapatcher.py` searches either a folder containing the chunks created by `reconstruct.py` or for a single binary for the MACA patch location and then patches the chunk or file. Recommended usage is to patch a chunk using the `p` flag, then rebuild your payload with `custompayload.py`. All credit for the patch goes to [@microwave89-hv](https://github.com/microwave89-hv). SMCUtil is required to flash the patched payload (not provided here and don't ask). This patch has been tested on 2012 - 2017 systems using the LM4F smc chips. It does not work on Renesas H8S/2117 chips (2011 and earlier). Note: Be aware that attempting to flash your patched payload may result in irrevocable damage to your system and is not recommened for inexperienced users.
 
 
 __dumpMACR.py Example:__
