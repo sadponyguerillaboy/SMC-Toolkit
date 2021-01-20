@@ -56,6 +56,11 @@ dumpMACR.py
 
 __Extra Tools:__
 ```
+adler32.py <path to file>
+```
+`adler32.py` is a simple script to calculate the adler32 checksum of a file.
+
+```
 build.py <path>
 ```
 `build.py` builds / assembles the file chunks created by `reconstruct.py` in the specified path. Example, if you specificy the `<path>` of `extraxcted/Mac-63001698E7A34814_smc`, it will only assemble those files into a binary.
