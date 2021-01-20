@@ -47,8 +47,8 @@ def main(path, option):
                 w.seek(found)
                 w.write(patch)
 
-path = sys.argv[1]
-option = sys.argv[2]
+option = sys.argv[1]
+path = sys.argv[2]
 main(path, option)
 print('finished')
 
