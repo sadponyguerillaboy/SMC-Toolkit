@@ -70,4 +70,4 @@ custompayload.py <path> <version>
 __TODO:__
 - decipher epm file generation
 - decipher RSA 256 signature on newer payloads
-- custompayload.py needs to have adler32 checksum recalculation functions implimented for newer firmwares
+- custompayload.py needs to have adler32 checksum recalculation functions implemented for newer firmwares
