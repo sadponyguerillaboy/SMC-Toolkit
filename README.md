@@ -3,7 +3,6 @@ Toolkit written in Python for working with Apple SMC Payloads. It generates comp
 
 __Requirements:__
 ```
-itertools
 numpy
 termcolor
 ```
