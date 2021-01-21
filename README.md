@@ -75,3 +75,7 @@ __TODO:__
 - decipher epm file generation
 - decipher RSA 256 signature on newer payloads
 - custompayload.py needs to have adler32 checksum recalculation functions implemented for newer firmwares
+
+
+__References:__
+- [Alex Iconescu's 2014 Recon Presentation - SMC The place to be definitely for an implant](https://www.youtube.com/watch?v=nSqpinjjgmg)
