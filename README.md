@@ -1,5 +1,5 @@
 # SMC-Toolkit
-Toolkit written in Python for working with Apple SMC Payloads. Intended for systeming with LM4F SMC chips. It can generate payloads from systems using 4 part firmwares (flasher_base, flasher_update, epm, Mac-BoardID), which are typically 2013 and newer. It can patch the MACA call and dump patched SMC's via MACR.
+Toolkit written in Python for working with Apple SMC Payloads. Intended for systems with LM4F SMC chips. It can generate payloads from systems using 4 part firmwares (flasher_base, flasher_update, epm, Mac-BoardID), which are typically 2013 and newer. It can patch the MACA call and dump patched SMC's via MACR.
 
 __Requirements:__
 ```
